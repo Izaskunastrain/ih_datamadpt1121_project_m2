@@ -14,7 +14,7 @@ In this repository we are going to explore the characterstics of the sales of th
 
 Starting form the diamonds.db, we connected DBeaver so that with help of SQL we could export the **diamonds.csv** to start working with: 
 
-<p align="center"><img src="./../images/DBeaver & SQL requests.png"></p>
+<p align="center"><img src="./images/DBeaver & SQL requests.png"></p>
 
 
 <p align="center"><img src="https://www.jorgehoya.es/wp-content/uploads/2018/01/dbeaver.png"></p>
