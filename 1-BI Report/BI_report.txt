@@ -1,0 +1,3 @@
+Link to BI dashboard in Tableau: 
+
+https://public.tableau.com/views/diamonds_16452743841540/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 

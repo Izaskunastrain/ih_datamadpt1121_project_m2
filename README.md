@@ -1,4 +1,4 @@
-<p align="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfPGGU_vu9pE4qzD0maeSB1ToqIQE1xY9KA&usqp=CAU"></p>
+<p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfPGGU_vu9pE4qzD0maeSB1ToqIQE1xY9KA&usqp=CAU"></p>
 
 
 # __ih_datamadpt1121_project_m2__
