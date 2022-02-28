@@ -1,68 +1,61 @@
 <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfPGGU_vu9pE4qzD0maeSB1ToqIQE1xY9KA&usqp=CAU"></p>
 
+# The Diamond Store 
 
-# __ih_datamadpt1121_project_m2__
+In this repository we are going to explore the characterstics of the sales of the Diamond Store in the past year. 
+- We will first obtain the data from our database via **Dbeaver**
+- We will manipulate it in order to build our dashboard with the help of **pandas**
+- We will built a revenue dashboard on **Tableau**
+- We will come up with very interesting **insights for the whole company as well as each local store**. 
 
-![Image](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/images/visuals.jpg)
+---
 
-Data analytics is oftentimes referred to as business intelligence, BI development, or product analytics. However, that is just the tip of the iceberg since the data analytics process includes activities such as data formation/creation, data cleansing, exploratory data analysis (especially this part), feature engineering, and interpretation of suggestions/predictions/results derived from advanced modelling analysis (i.e.: Machine Learning).
+## __Step 1: Data Exploration and Preparation__
 
-For this project you will perform some of these activities in order to analyse the [__diamonds_m2.db__](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/db/diamonds_m2.db) `SQLite` database.
+Starting form the diamonds.db, we connected DBeaver so that with help of SQL we could export the **diamonds.csv** to start working with: 
 
 
-```
-conda install -c anaconda sqlite
-```
+`SELECT
+dp.index_id as "Index_ID",
+dc.clarity as "Clarity",
+dco.color as "Color",
+dcu.cut as "Cut",
+dt.carat as "Carat",
+dd.x as "x",
+dd.y as "y",
+dd.z as "z",
+dd."table" as "Table",
+dd."depth" as "Depth",
+dt.price as "Price",
+dci.city as "City"
+FROM diamonds_properties dp
+INNER JOIN diamonds_clarity dc ON dc.clarity_id =dp.clarity_id
+INNER JOIN diamonds_color dco ON dco.color_id =dp.color_id
+INNER JOIN diamonds_cut dcu ON dcu.cut_id =dp.cut_id 
+INNER JOIN diamonds_dimensions dd ON dd.index_id = dp.index_id
+INNER JOIN diamonds_transactional dt ON dt.index_id = dp.index_id 
+INNER JOIN diamonds_city dci ON dci.city_id = dt.city_id `,
+
+<p align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fdbeaver%2Fdbeaver&psig=AOvVaw3JZ5iGnMbWy_ZYahr7RnL8&ust=1646170561347000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjS3q6to_YCFQAAAAAdAAAAABAD"></p>
+
+
+
+From this **diamonds.csv**, pandas was applied to group and filter information in order to built the visualizations that as we were exploring the dataset, we found more relevant to offer. 
 
 
 ---
 
 
 
-## **Deliverables:**
-
-A GitHub repository including:
-
-- `exploratory analysis` files that holds the results of __Challenge 1__. 
-
-- `BI Report/Dashboard` meeting the requeriments specified in __Challenge 2__.
-
-- `README.md` file explaining the job done and your main conclusions. You may find more info of how to build a README file [here](https://github.com/potacho/data-project-template/blob/master/README.md).
-
-
-
 ---
 
+## __Step 2: BI report__
 
 
-## **Presentation:**
 
-- __Time:__ 4 minutes sharp.
-- __Content:__ explain why your dashboard funtionalities are the best for getting meaningful data insights. Support your arguments on the conclusions obtained from the __exploratory analysis__. Conclude your pitch telling us (_in one sentence_) the most important insight (_under your criteria_) you've extracted.
-
-<p align="center"><img src="https://media.giphy.com/media/1Ygis29YXMS35cW90I/giphy.gif"></p>
-
-
-> __IMPORTANT NOTE:__ You only need your BI Report/Dashboard for the presentation (i.e.: no Jupyter, no PowerPoint/Canva)
-
-
+## __Step 3: Insights__
 
 ---
-
-
-
-## __Challenge 1: Data Exploration and Preparation__
-
-The goal of this challenge is to perform an __exploratory analysis__ in order to gain initial insight on our diamonds database and prepare the __data model__ that better fits your visualizations. You may use any ETL tool from those explained in class (i.e.: Pandas, PowerQuery, Tableau Public). 
-
-<p align="center"><img src="https://media.giphy.com/media/iP1qEUE7VKhLq/giphy.gif"></p>
-
-> **IMPORTANT NOTE:** You may use any tool and/or workflow that you find more convenient in order to provide the requested output. 
-
-
-
----
-
 
 
 ## **Challenge 2: BI Report/Dashboard**
