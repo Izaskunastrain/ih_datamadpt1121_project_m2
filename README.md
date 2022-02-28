@@ -74,32 +74,39 @@ We know that colourless diamonds are the best but numbers tell us that we culd b
 
 
 
-
-
 ---
 
 
+## __Extra information__
 
-## **References:**
 
-- [SQLite](https://www.sqlite.org/index.html)
+### :wrench: **Configuration**
+- We recomend having the latest version of python for executing pandas data manipulation files.
+- Tableau dashboard has been created with Tableau Public (https://public.tableau.com/en-us/s/)
+- Dbeaver is also free tool that can be downloaded (https://dbeaver.io/download/)
 
-- [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html)
+###  **Please NOTE**
+Please note that this is a practical exercise done with NOT real data with the aim to practice visualization concepts in the context of Ironhack Data Analytics student program. 
 
-- [Visual Analysis Best Practices](https://github.com/ih-datapt-mad/ih_datamadpt1121_project_m2/blob/main/images/visual-analysis-guidebook.pdf)
-
-- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
-
-- [Matplotlib](https://matplotlib.org/stable/api/index)
-
-- [Pandas Visualization](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.html)
-
-- [Seaborn](https://seaborn.pydata.org/api.html)
-
-- [Plotly](https://plotly.com/graphing-libraries/)
-
-- [Cufflinks](https://coderzcolumn.com/tutorials/data-science/cufflinks-how-to-create-plotly-charts-from-pandas-dataframe-with-one-line-of-code)
-
-- [Tableau](https://github.com/ih-datapt-mad/dataptmad1121_lessons/blob/main/module-2/visualization_tableau.md)
-
-- [Power BI](https://github.com/potacho/power_bi_workshop)
+### :file_folder: **Folder structure**
+```
+└── project
+    └── 0-Data exploration & Manipulation
+    │   ├── Data_extraction.ipynb
+    │   ├── Data_manipulation.ipynb
+    ├── 1-BI Report
+    │   ├──BI_Report.txt
+    ├── data
+    │   ├── clarity.csv
+    │   ├──diamonds.csv
+    │   ├── low3.csv
+    │   └── top3.csv
+    ├── db
+    │   ├── diamonds.db
+    ├── images
+    │   ├── DBeaver & SQL requests
+        ├── Tableau_Dashboard
+    ├── queries
+    │   ├── Script_DBeaver
+    ├── README.md
+    
